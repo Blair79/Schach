@@ -44,9 +44,15 @@ public class Schach extends JFrame {
 	}
 
 	private void move(JPanel x) {
-		if (x.getComponentCount()>0)((JLabel) x.getComponent(0)).setText(test);
-		else {x.add(test2);x.revalidate();x.repaint();System.out.println(test2.toString());}
-		
+		if (x.getComponentCount() > 0)
+			((JLabel) x.getComponent(0)).setText(test);
+		else {
+			x.add(test2);
+			x.revalidate();
+			x.repaint();
+			System.out.println(test2.toString());
+		}
+
 	}
 
 	/**
@@ -132,14 +138,14 @@ public class Schach extends JFrame {
 		gbc_lblG.gridx = 7;
 		gbc_lblG.gridy = 0;
 		xcord.add(lblG, gbc_lblG);
-		
-				JLabel lblH = new JLabel("H");
-				GridBagConstraints gbc_lblH = new GridBagConstraints();
-				gbc_lblH.insets = new Insets(0, 0, 0, 5);
-				gbc_lblH.fill = GridBagConstraints.VERTICAL;
-				gbc_lblH.gridx = 8;
-				gbc_lblH.gridy = 0;
-				xcord.add(lblH, gbc_lblH);
+
+		JLabel lblH = new JLabel("H");
+		GridBagConstraints gbc_lblH = new GridBagConstraints();
+		gbc_lblH.insets = new Insets(0, 0, 0, 5);
+		gbc_lblH.fill = GridBagConstraints.VERTICAL;
+		gbc_lblH.gridx = 8;
+		gbc_lblH.gridy = 0;
+		xcord.add(lblH, gbc_lblH);
 
 		JPanel ycord = new JPanel();
 		getContentPane().add(ycord, BorderLayout.WEST);
@@ -238,7 +244,7 @@ public class Schach extends JFrame {
 		gbc_a8.gridx = 0;
 		gbc_a8.gridy = 0;
 		board.add(a8, gbc_a8);
-		
+
 		JLabel stl = new JLabel("ST");
 		a8.add(stl);
 
@@ -257,7 +263,7 @@ public class Schach extends JFrame {
 		gbc_b8.gridx = 1;
 		gbc_b8.gridy = 0;
 		board.add(b8, gbc_b8);
-		
+
 		JLabel ssl = new JLabel("SS");
 		b8.add(ssl);
 
@@ -276,7 +282,7 @@ public class Schach extends JFrame {
 		gbc_c8.gridx = 2;
 		gbc_c8.gridy = 0;
 		board.add(c8, gbc_c8);
-		
+
 		JLabel sll = new JLabel("SL");
 		c8.add(sll);
 
@@ -295,7 +301,7 @@ public class Schach extends JFrame {
 		gbc_d8.gridx = 3;
 		gbc_d8.gridy = 0;
 		board.add(d8, gbc_d8);
-		
+
 		JLabel sd = new JLabel("SD");
 		d8.add(sd);
 
@@ -314,7 +320,7 @@ public class Schach extends JFrame {
 		gbc_e8.gridx = 4;
 		gbc_e8.gridy = 0;
 		board.add(e8, gbc_e8);
-		
+
 		JLabel sk = new JLabel("SK");
 		e8.add(sk);
 
@@ -333,7 +339,7 @@ public class Schach extends JFrame {
 		gbc_f8.gridx = 5;
 		gbc_f8.gridy = 0;
 		board.add(f8, gbc_f8);
-		
+
 		JLabel slr = new JLabel("SL");
 		f8.add(slr);
 
@@ -352,7 +358,7 @@ public class Schach extends JFrame {
 		gbc_g8.gridx = 6;
 		gbc_g8.gridy = 0;
 		board.add(g8, gbc_g8);
-		
+
 		JLabel ssr = new JLabel("SS");
 		g8.add(ssr);
 
@@ -371,7 +377,7 @@ public class Schach extends JFrame {
 		gbc_h8.gridx = 7;
 		gbc_h8.gridy = 0;
 		board.add(h8, gbc_h8);
-		
+
 		JLabel str = new JLabel("ST");
 		h8.add(str);
 
@@ -390,7 +396,7 @@ public class Schach extends JFrame {
 		gbc_a7.gridx = 0;
 		gbc_a7.gridy = 1;
 		board.add(a7, gbc_a7);
-		
+
 		JLabel br9 = new JLabel("SB");
 		a7.add(br9);
 
@@ -409,7 +415,7 @@ public class Schach extends JFrame {
 		gbc_b7.gridx = 1;
 		gbc_b7.gridy = 1;
 		board.add(b7, gbc_b7);
-		
+
 		JLabel br10 = new JLabel("SB");
 		b7.add(br10);
 
@@ -428,7 +434,7 @@ public class Schach extends JFrame {
 		gbc_c7.gridx = 2;
 		gbc_c7.gridy = 1;
 		board.add(c7, gbc_c7);
-		
+
 		JLabel br11 = new JLabel("SB");
 		c7.add(br11);
 
@@ -447,7 +453,7 @@ public class Schach extends JFrame {
 		gbc_d7.gridx = 3;
 		gbc_d7.gridy = 1;
 		board.add(d7, gbc_d7);
-		
+
 		JLabel br12 = new JLabel("SB");
 		d7.add(br12);
 
@@ -466,7 +472,7 @@ public class Schach extends JFrame {
 		gbc_e7.gridx = 4;
 		gbc_e7.gridy = 1;
 		board.add(e7, gbc_e7);
-		
+
 		JLabel br13 = new JLabel("SB");
 		e7.add(br13);
 
@@ -485,7 +491,7 @@ public class Schach extends JFrame {
 		gbc_f7.gridx = 5;
 		gbc_f7.gridy = 1;
 		board.add(f7, gbc_f7);
-		
+
 		JLabel br14 = new JLabel("SB");
 		f7.add(br14);
 
@@ -504,7 +510,7 @@ public class Schach extends JFrame {
 		gbc_g7.gridx = 6;
 		gbc_g7.gridy = 1;
 		board.add(g7, gbc_g7);
-		
+
 		JLabel br15 = new JLabel("SB");
 		g7.add(br15);
 
@@ -523,7 +529,7 @@ public class Schach extends JFrame {
 		gbc_h7.gridx = 7;
 		gbc_h7.gridy = 1;
 		board.add(h7, gbc_h7);
-		
+
 		JLabel br16 = new JLabel("SB");
 		h7.add(br16);
 
@@ -1045,9 +1051,10 @@ public class Schach extends JFrame {
 			public void mouseReleased(MouseEvent e) {
 				move((JPanel) e.getComponent());
 			}
+
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test2=(JLabel) ((JPanel) e.getComponent()).getComponent(0);
+				test2 = (JLabel) ((JPanel) e.getComponent()).getComponent(0);
 				((JPanel) e.getComponent()).removeAll();
 				((JPanel) e.getComponent()).invalidate();
 			}
@@ -1060,7 +1067,7 @@ public class Schach extends JFrame {
 		gbc_a2.gridx = 0;
 		gbc_a2.gridy = 6;
 		board.add(a2, gbc_a2);
-		
+
 		JLabel br1 = new JLabel("WB");
 		a2.add(br1);
 
@@ -1079,7 +1086,7 @@ public class Schach extends JFrame {
 		gbc_b2.gridx = 1;
 		gbc_b2.gridy = 6;
 		board.add(b2, gbc_b2);
-		
+
 		JLabel br2 = new JLabel("WB");
 		b2.add(br2);
 
@@ -1098,7 +1105,7 @@ public class Schach extends JFrame {
 		gbc_c2.gridx = 2;
 		gbc_c2.gridy = 6;
 		board.add(c2, gbc_c2);
-		
+
 		JLabel br3 = new JLabel("WB");
 		c2.add(br3);
 
@@ -1117,7 +1124,7 @@ public class Schach extends JFrame {
 		gbc_d2.gridx = 3;
 		gbc_d2.gridy = 6;
 		board.add(d2, gbc_d2);
-		
+
 		JLabel br4 = new JLabel("WB");
 		d2.add(br4);
 
@@ -1136,7 +1143,7 @@ public class Schach extends JFrame {
 		gbc_e2.gridx = 4;
 		gbc_e2.gridy = 6;
 		board.add(e2, gbc_e2);
-		
+
 		JLabel br5 = new JLabel("WB");
 		e2.add(br5);
 
@@ -1155,7 +1162,7 @@ public class Schach extends JFrame {
 		gbc_f2.gridx = 5;
 		gbc_f2.gridy = 6;
 		board.add(f2, gbc_f2);
-		
+
 		JLabel br6 = new JLabel("WB");
 		f2.add(br6);
 
@@ -1174,7 +1181,7 @@ public class Schach extends JFrame {
 		gbc_g2.gridx = 6;
 		gbc_g2.gridy = 6;
 		board.add(g2, gbc_g2);
-		
+
 		JLabel br7 = new JLabel("WB");
 		g2.add(br7);
 
@@ -1193,7 +1200,7 @@ public class Schach extends JFrame {
 		gbc_h2.gridx = 7;
 		gbc_h2.gridy = 6;
 		board.add(h2, gbc_h2);
-		
+
 		JLabel br8 = new JLabel("WB");
 		h2.add(br8);
 
@@ -1214,8 +1221,6 @@ public class Schach extends JFrame {
 		gbc_a1.gridx = 0;
 		gbc_a1.gridy = 7;
 		board.add(a1, gbc_a1);
-		
-		
 
 		JPanel b1 = new JPanel();
 		JLabel wsl = new JLabel("WS");
@@ -1234,8 +1239,6 @@ public class Schach extends JFrame {
 		gbc_b1.gridx = 1;
 		gbc_b1.gridy = 7;
 		board.add(b1, gbc_b1);
-		
-		
 
 		JPanel c1 = new JPanel();
 		c1.addMouseListener(new MouseAdapter() {
@@ -1252,7 +1255,7 @@ public class Schach extends JFrame {
 		gbc_c1.gridx = 2;
 		gbc_c1.gridy = 7;
 		board.add(c1, gbc_c1);
-		
+
 		JLabel wll = new JLabel("WL");
 		c1.add(wll);
 
@@ -1271,7 +1274,7 @@ public class Schach extends JFrame {
 		gbc_d1.gridx = 3;
 		gbc_d1.gridy = 7;
 		board.add(d1, gbc_d1);
-		
+
 		JLabel wd = new JLabel("WD");
 		d1.add(wd);
 
@@ -1290,7 +1293,7 @@ public class Schach extends JFrame {
 		gbc_e1.gridx = 4;
 		gbc_e1.gridy = 7;
 		board.add(e1, gbc_e1);
-		
+
 		JLabel wk = new JLabel("WK");
 		e1.add(wk);
 
@@ -1309,7 +1312,7 @@ public class Schach extends JFrame {
 		gbc_f1.gridx = 5;
 		gbc_f1.gridy = 7;
 		board.add(f1, gbc_f1);
-		
+
 		JLabel wlr = new JLabel("WL");
 		f1.add(wlr);
 
@@ -1328,7 +1331,7 @@ public class Schach extends JFrame {
 		gbc_g1.gridx = 6;
 		gbc_g1.gridy = 7;
 		board.add(g1, gbc_g1);
-		
+
 		JLabel wsr = new JLabel("WS");
 		g1.add(wsr);
 
@@ -1346,7 +1349,7 @@ public class Schach extends JFrame {
 		gbc_h1.gridx = 7;
 		gbc_h1.gridy = 7;
 		board.add(h1, gbc_h1);
-		
+
 		JLabel wtr = new JLabel("WT");
 		h1.add(wtr);
 
@@ -1368,7 +1371,7 @@ public class Schach extends JFrame {
 
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblSb = new GridBagConstraints();
@@ -1382,7 +1385,7 @@ public class Schach extends JFrame {
 		lblSt.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblSt = new GridBagConstraints();
@@ -1396,7 +1399,7 @@ public class Schach extends JFrame {
 		lblSs.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblSs = new GridBagConstraints();
@@ -1409,7 +1412,7 @@ public class Schach extends JFrame {
 		lblSl.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblSl = new GridBagConstraints();
@@ -1422,7 +1425,7 @@ public class Schach extends JFrame {
 		lblSk.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblSk = new GridBagConstraints();
@@ -1435,7 +1438,7 @@ public class Schach extends JFrame {
 		lblSd.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblSd = new GridBagConstraints();
@@ -1457,7 +1460,7 @@ public class Schach extends JFrame {
 		lblWb.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_lblWb = new GridBagConstraints();
@@ -1471,7 +1474,7 @@ public class Schach extends JFrame {
 		label_8.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_label_8 = new GridBagConstraints();
@@ -1485,7 +1488,7 @@ public class Schach extends JFrame {
 		label_9.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_label_9 = new GridBagConstraints();
@@ -1499,7 +1502,7 @@ public class Schach extends JFrame {
 		label_10.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_label_10 = new GridBagConstraints();
@@ -1513,7 +1516,7 @@ public class Schach extends JFrame {
 		label_11.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_label_11 = new GridBagConstraints();
@@ -1527,7 +1530,7 @@ public class Schach extends JFrame {
 		label_12.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				test =((JLabel) e.getComponent()).getText();
+				test = ((JLabel) e.getComponent()).getText();
 			}
 		});
 		GridBagConstraints gbc_label_12 = new GridBagConstraints();
